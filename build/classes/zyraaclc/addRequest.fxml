@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="311.0" prefWidth="323.0" style="-fx-border-color: #ccc; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zyraaclc.AddRequestController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="24.0" prefHeight="72.0" prefWidth="303.0" style="-fx-background-color: #104E8B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="28.0" layoutY="16.0" prefHeight="17.0" text="Adding Request" textFill="WHITESMOKE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="94.0" prefHeight="209.0" prefWidth="303.0" style="-fx-background-color: #F0F0F0;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="94.0">
+         <children>
+            <Label layoutX="24.0" layoutY="62.0" text="Date Needed" AnchorPane.leftAnchor="24.0" />
+            <JFXDatePicker fx:id="dateNeeded" layoutX="24.0" layoutY="79.0" prefHeight="31.0" prefWidth="255.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" />
+            <JFXButton layoutX="159.0" layoutY="146.0" onAction="#addRequest" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #104E8B;" text="Done" textFill="WHITESMOKE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="73.0" layoutY="146.0" onAction="#close" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ccc;" text="Cancel" textFill="#333333">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="documentName" layoutX="131.0" layoutY="36.0" style="-fx-text-alignment: center;" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="36.0" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import jfxtras.scene.layout.CircularPane?>
+
+<AnchorPane id="AnchorPane" fx:id="mPane" prefHeight="184.0" prefWidth="139.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zyraaclc.FurtherController">
+   <children>
+      <CircularPane clipAwayExcessWhitespace="false" layoutX="6.0" layoutY="6.0" style="-fx-background-color: #282828; -fx-background-radius: 180; -fx-border-radius: 180;">
+         <children>
+          
+           
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#close" text="Close" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="CLOSE" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" focusTraversable="false" onAction="#showRequests" text="Requests" textFill="WHITESMOKE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="USERS" size="35">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FontAwesomeIconView>
+               </graphic>
+            </JFXButton>
+         </children>
+      </CircularPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="244.0" prefWidth="421.0" style="-fx-border-width: 1px; -fx-border-color: #ccc;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="zyraaclc.ReportController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="34.0" prefHeight="72.0" prefWidth="303.0" style="-fx-background-color: #104E8B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="172.0" layoutY="18.0" prefHeight="17.0" text="Report" textFill="WHITESMOKE" AnchorPane.leftAnchor="172.0" AnchorPane.rightAnchor="172.0" AnchorPane.topAnchor="18.0">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXComboBox fx:id="type" layoutX="162.0" layoutY="96.0" prefHeight="25.0" prefWidth="212.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="96.0" />
+      <Label layoutX="36.0" layoutY="104.0" text="Select Report Type:" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="104.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="year" layoutX="83.0" layoutY="139.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="227.0" AnchorPane.topAnchor="139.0" />
+      <Label layoutX="46.0" layoutY="144.0" prefHeight="19.0" text="Year" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="143.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="month" layoutX="263.0" layoutY="138.0" prefHeight="25.0" prefWidth="111.0" AnchorPane.leftAnchor="263.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="139.0" />
+      <Label layoutX="220.0" layoutY="141.0" text="Month" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="141.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="132.0" layoutY="189.0" onAction="#close" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ccc;" text="Cancel" textFill="#333333">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="217.0" layoutY="189.0" onAction="#done" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #104E8B;" text="Done" textFill="WHITESMOKE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

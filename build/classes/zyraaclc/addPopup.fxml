@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="334.0" prefWidth="312.0" style="-fx-border-color: #ccc; -fx-border-width: 1px;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zyraaclc.AddPopupController">
+   <children>
+      <AnchorPane layoutY="14.0" prefHeight="72.0" prefWidth="435.0" style="-fx-background-color: #104E8B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="25.0" layoutY="18.0" prefHeight="17.0" text="Adding Document" textFill="WHITESMOKE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="5.0" layoutY="83.0" prefHeight="238.0" prefWidth="303.0" style="-fx-background-color: #F0F0F0;">
+         <children>
+            <Label layoutX="24.0" layoutY="38.0" text="Document Name" AnchorPane.leftAnchor="24.0" />
+            <Label layoutX="24.0" layoutY="90.0" text="Date Added" AnchorPane.leftAnchor="24.0" />
+            <JFXDatePicker fx:id="dateAdd" layoutX="24.0" layoutY="107.0" prefHeight="31.0" prefWidth="255.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" />
+            <JFXButton layoutX="159.0" layoutY="193.0" onAction="#addAction" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #104E8B;" text="Done" textFill="WHITESMOKE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="73.0" layoutY="193.0" onAction="#close" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ccc;" text="Cancel" textFill="#333333">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="document" layoutX="24.0" layoutY="55.0" maxWidth="334.0" minWidth="255.0" prefHeight="31.0" prefWidth="255.0" AnchorPane.leftAnchor="24.0" AnchorPane.rightAnchor="24.0" />
+            <JFXButton layoutX="110.0" layoutY="149.0" onAction="#fileOpen" style="-fx-background-color: #ccc;" text="Choose File" />
+         </children>
+         <padding>
+            <Insets bottom="30.0" />
+         </padding>
+      </AnchorPane>
+   </children>
+</AnchorPane>

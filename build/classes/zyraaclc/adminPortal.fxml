@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" onMouseDragged="#dragged" onMousePressed="#mousePressed" prefHeight="645.0" prefWidth="797.0" style="-fx-border-color: #ccc; -fx-border-width: 1px;" stylesheets="@../../../../kerrrrr/NetBeansProjects/documentTrackingSystem/src/documenttrackingsystem/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zyraaclc.AdminPortalController">
+   <children>
+      <AnchorPane fx:id="mPane" layoutX="106.0" layoutY="51.0" prefHeight="589.0" prefWidth="690.0" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="11.0" AnchorPane.topAnchor="50.0" />
+      <VBox fx:id="menuHolder" layoutX="7.0" layoutY="48.0" prefHeight="598.0" prefWidth="90.0" spacing="10.0" style="-fx-background-color: #333;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="6.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <JFXButton contentDisplay="TOP" onAction="#loadHome" prefHeight="70.0" prefWidth="91.0" text="HOME" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="HOME" size="40" />
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" onAction="#reportView" prefHeight="70.0" prefWidth="90.0" text="REPORT" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="LINE_CHART" size="40" />
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" onAction="#myRequests" prefHeight="63.0" prefWidth="88.0" text="DOCUMENT" textFill="#f8f8f8">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="CLIPBOARD" size="40" />
+               </graphic>
+            </JFXButton>
+            
+            <JFXButton fx:id="userButton1" contentDisplay="TOP" onAction="#loadUsers" prefHeight="63.0" prefWidth="90.0" text="ADD USER" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="USER_PLUS" size="40" />
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" id="notif" onAction="#notif" prefHeight="63.0" prefWidth="88.0" text="NOTIFICATION" textFill="#f8f8f8">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="GLOBE" size="40" />
+               </graphic>
+            </JFXButton>
+            <JFXButton contentDisplay="TOP" onAction="#signOut" prefHeight="68.0" prefWidth="92.0" text="SIGN_OUT" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITESMOKE" glyphName="SIGN_OUT" size="40" text="" />
+               </graphic>
+            </JFXButton>
+            
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </VBox>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="42.0" prefWidth="793.0" style="-fx-background-color: #ccc;" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+         <children>
+            <FontAwesomeIconView fill="#333333" glyphName="TIMES" layoutX="776.0" layoutY="20.0" onMouseReleased="#close" size="15" AnchorPane.rightAnchor="7.214285850524902" AnchorPane.topAnchor="7.142857551574707">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <FontAwesomeIconView fill="#333333" glyphName="MINUS" layoutX="759.0714273452759" layoutY="23.0" size="15" AnchorPane.rightAnchor="24.142858505249023" AnchorPane.topAnchor="10.142857551574707">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </FontAwesomeIconView>
+            <Label fx:id="labeler" layoutX="33.0" layoutY="6.0" text="Guest 1" textFill="#333333">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView fill="#333333" glyphName="USER" layoutX="9.0" layoutY="21.0" size="18" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

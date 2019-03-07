@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="581.0" prefWidth="320" style="-fx-border-width: 1px; -fx-border-color: #ccc;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="zyraaclc.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="360.0" fitWidth="335.0" layoutX="-3.0" layoutY="-2.0" opacity="0.09" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../kerrrrr/NetBeansProjects/zyraACLC/src/image/hcp%20today.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="258.0" fitWidth="326.0" layoutX="7.0" layoutY="95.0" opacity="0.65" pickOnBounds="true">
+         <image>
+            <Image url="@../image/sassssssssssssss.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="223.0" fitWidth="326.0" layoutX="3.0" layoutY="357.0" opacity="0.42" pickOnBounds="true">
+         <image>
+            <Image url="@../image/blue-line-design-abstract-waves-design-free-vector-blue-line-design-prescott-az.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="119.0" fitWidth="144.0" layoutX="118.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="34.0" layoutY="35.0" prefHeight="61.0" prefWidth="276.0" text="Parish Record Tracking System" textFill="#1874cd" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="34.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="TIMES" layoutX="305.0" layoutY="28.0" onMouseReleased="#close" size="15" AnchorPane.rightAnchor="3.2142858505249023">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView glyphName="MINUS" layoutX="282.7857141494751" layoutY="31.0" size="15" AnchorPane.rightAnchor="22.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <JFXButton layoutX="121.0" layoutY="468.0" onAction="#loggy" opacity="0.79" prefHeight="43.0" prefWidth="89.0" ripplerFill="#1b0000" style="-fx-background-color: #1874CD;" text="Sign In" textFill="WHITE" textOverrun="CENTER_ELLIPSIS" AnchorPane.bottomAnchor="72.0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0" />
+      <Circle fx:id="circle" fill="#0084ff" layoutX="190.0" layoutY="214.0" opacity="0.0" radius="100.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="61.0" AnchorPane.rightAnchor="59.0" AnchorPane.topAnchor="140.0" />
+      <FontAwesomeIconView fill="WHITESMOKE" glyphName="USER" layoutX="122.0" layoutY="278.0" opacity="0.0" size="100" text="" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="119.42857360839844" AnchorPane.topAnchor="192.28571319580078" />
+      <Label fx:id="dater" layoutX="147.0" layoutY="543.0" text="2019/08/22" AnchorPane.leftAnchor="-180.0" />
+      <JFXTextField fx:id="username" alignment="CENTER" layoutX="27.0" layoutY="358.0" maxWidth="276.0" minWidth="276.0" prefHeight="35.0" prefWidth="276.0" promptText="Username" unFocusColor="#030000" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="358.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password" alignment="TOP_LEFT" layoutX="27.0" layoutY="403.0" maxWidth="276.0" minWidth="276.0" prefHeight="35.0" prefWidth="276.0" promptText="Password" unFocusColor="BLACK" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="403.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXPasswordField>
+   </children>
+</AnchorPane>

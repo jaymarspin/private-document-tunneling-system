@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="327.0" style="-fx-border-color: #ccc; -fx-border-width: 1px;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="zyraaclc.AddUserController">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="34.0" prefHeight="72.0" prefWidth="303.0" style="-fx-background-color: #104E8B;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="28.0" layoutY="16.0" prefHeight="17.0" text="Adding Users" textFill="WHITESMOKE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="15.0" layoutY="104.0" prefHeight="480.0" prefWidth="307.0" style="-fx-background-color: #F0F0F0;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="94.0">
+         <children>
+            <Label layoutX="24.0" layoutY="62.0" text="First Name" AnchorPane.leftAnchor="24.0" />
+            <JFXButton layoutX="159.0" layoutY="257.0" onAction="#addUser" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #104E8B;" text="Done" textFill="WHITESMOKE" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="159.0" AnchorPane.rightAnchor="76.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="79.0" layoutY="257.0" onAction="#close" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: #ccc;" text="Cancel" textFill="#333333" AnchorPane.bottomAnchor="28.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="156.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="documentName" layoutX="131.0" layoutY="36.0" style="-fx-text-alignment: center;" AnchorPane.leftAnchor="131.0" AnchorPane.rightAnchor="131.0" AnchorPane.topAnchor="36.0" />
+            <JFXTextField fx:id="fname" layoutX="21.0" layoutY="89.0" maxWidth="268.0" minWidth="260.0" prefHeight="31.0" prefWidth="268.0" />
+            <Label layoutX="23.0" layoutY="120.0" text="Last Name" />
+            <JFXTextField fx:id="lname" layoutX="20.0" layoutY="147.0" maxWidth="268.0" minWidth="260.0" prefHeight="31.0" prefWidth="268.0" />
+            <Label layoutX="23.0" layoutY="178.0" text="Username" />
+            <JFXTextField fx:id="username" layoutX="20.0" layoutY="205.0" maxWidth="268.0" minWidth="260.0" prefHeight="31.0" prefWidth="268.0" />
+            <Label layoutX="24.0" layoutY="236.0" text="Password" />
+            <JFXTextField fx:id="password" layoutX="21.0" layoutY="263.0" maxWidth="268.0" minWidth="260.0" prefHeight="31.0" prefWidth="268.0" />
+            <Label layoutX="24.0" layoutY="294" text="Email" />
+            <JFXTextField fx:id="email" layoutX="21.0" layoutY="321.0" maxWidth="268.0" minWidth="260.0" prefHeight="31.0" prefWidth="268.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
