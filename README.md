@@ -9,7 +9,11 @@ sure you reimport all the libraries needed in this project located
 at /dist/lib once youre done you'll still 
 encounter error that says a library is not found or 
 something like that you'll need to remove the broken reference in the properties
-of the project search it on the internet if you find it hard to do
+of course you have to import the database in your phpmyadmin in xampp or any mysql database software
+the sql file is located in the database folder, create a database name it parish then import the sql file in there.
+in the connectionDetails.java you can see there the connection function to the database of software you have to modify
+a few codes there
+
 
 --Happy coding
   Jaymar Daligdig
